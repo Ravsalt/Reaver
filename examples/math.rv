@@ -1,0 +1,50 @@
+# Comprehensive math.rv example
+
+# Basic arithmetic operations
+a = 10
+b = 5
+
+rp "Addition:"
+c = a + b # 15
+rp c
+
+rp "Subtraction:"
+d = a - b # 5
+rp d
+
+rp "Multiplication:"
+e = a * b # 50
+rp e
+
+rp "Division:"
+f = a / b # 2
+rp f
+
+# Operator precedence
+rp "Operator Precedence:"
+g = 2 + 3 * 4 # 14 (multiplication before addition)
+rp g
+
+h = 10 / 2 - 3 # 2 (division before subtraction)
+rp h
+
+# More complex expressions
+rp "Complex Expressions:"
+x = 10
+y = 3
+z = 2
+
+expr1 = x + y * z - (x / z) # 10 + 3*2 - (10/2) = 10 + 6 - 5 = 11
+rp expr1
+
+expr2 = (x - y) * (z + 1) # (10-3) * (2+1) = 7 * 3 = 21
+rp expr2
+
+# Variable reassignment and use in expressions
+rp "Reassignment:"
+val1 = 100
+rp val1
+val1 = val1 / 10 # 10
+rp val1
+val2 = val1 * 5 + 2 # 10 * 5 + 2 = 52
+rp val2

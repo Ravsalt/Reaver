@@ -1,0 +1,16 @@
+# Countdown Example
+
+# This program counts down from a starting number to 0.
+
+start_number = 5
+
+rp "Starting Countdown from:"
+rp start_number
+
+current_number = start_number
+while current_number < 1 { # Loop while current_number is greater than 0
+    rp current_number
+    current_number = current_number - 1
+}
+
+rp "Countdown finished!"

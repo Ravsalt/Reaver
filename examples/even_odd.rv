@@ -1,0 +1,28 @@
+# Even or Odd Example
+
+# This program determines if a given number is even or odd.
+# It uses the property that an even number divided by 2 has no remainder.
+# Since Reaver only has integer division, we can check if (num / 2) * 2 == num.
+
+number_to_check = 7 # Change this number to test
+
+rp "Checking if number is even or odd:"
+rp number_to_check
+
+# Calculate (number_to_check / 2) * 2
+half_then_double = (number_to_check / 2) * 2
+
+# If half_then_double is equal to number_to_check, it's even.
+# Otherwise, it's odd.
+# Reaver only has '<' for comparison, so we simulate equality.
+
+# Check if half_then_double < number_to_check (implies odd)
+if half_then_double < number_to_check {
+    rp "The number is Odd."
+} else {
+    # If not less, it could be equal or greater. Since it's (num/2)*2, it can only be equal or less.
+    # So, if not less, it must be equal, meaning it's Even.
+    rp "The number is Even."
+}
+
+rp "Even/Odd example finished."

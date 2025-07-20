@@ -1,0 +1,13 @@
+# Comprehensive semantic_error.rv example
+
+# Error 1: Use of undeclared variable
+rp x  # 'x' is used before being assigned a value
+
+# Error 2: Attempt to re-declare a variable (Reaver does not support explicit re-declaration)
+# This will be caught by the semantic analyzer if it checks for such cases.
+# (Note: Current Reaver implementation allows re-assignment, not re-declaration)
+# For now, this example focuses on undeclared variable.
+
+# Example of a valid assignment after an error (will not be reached)
+# y = 10
+# rp y

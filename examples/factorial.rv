@@ -1,0 +1,27 @@
+# Factorial Example
+
+# This program calculates the factorial of a non-negative integer N.
+# N! = N * (N-1) * (N-2) * ... * 1
+# 0! = 1
+
+N = 5 # Change N to calculate factorial for a different number
+
+rp "Calculating factorial of:"
+rp N
+
+# Handle base case for 0!
+if N < 1 {
+    result = 1
+} else {
+    result = 1
+    counter = 1
+    while counter < N + 1 {
+        result = result * counter
+        counter = counter + 1
+    }
+}
+
+rp "The factorial is:"
+rp result
+
+rp "Factorial example finished."

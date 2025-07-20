@@ -1,0 +1,21 @@
+# Sum of N Numbers Example
+
+# This program calculates the sum of numbers from 1 to N.
+
+N = 5 # Change N to calculate sum up to a different number
+
+rp "Calculating sum up to:"
+rp N
+
+current_sum = 0
+counter = 1
+
+while counter < N + 1 { # Loop from 1 to N
+    current_sum = current_sum + counter
+    counter = counter + 1
+}
+
+rp "The sum is:"
+rp current_sum
+
+rp "Sum of N example finished."

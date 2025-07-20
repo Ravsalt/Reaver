@@ -1,0 +1,25 @@
+# Comprehensive loop.rv example
+
+# Simple while loop
+i = 0
+while i < 3 {
+    rp "Outer loop: "
+    rp i
+    j = 0
+    while j < 2 {
+        rp "  Inner loop: "
+        rp j
+        j = j + 1
+    }
+    i = i + 1
+}
+
+rp "Loops finished!"
+
+# Another loop with a different condition
+k = 10
+while k > 7 {
+    rp "Countdown: "
+    rp k
+    k = k - 1
+}

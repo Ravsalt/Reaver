@@ -1,0 +1,22 @@
+# Max of Two Numbers Example
+
+# This program finds the maximum of two given numbers.
+
+num_a = 15
+num_b = 20
+
+rp "Finding max of:"
+rp num_a
+rp num_b
+
+# Using nested if-else to find the maximum
+if num_a < num_b {
+    rp "The maximum number is:"
+    rp num_b
+} else {
+    # If num_a is not less than num_b, it means num_a is greater than or equal to num_b
+    rp "The maximum number is:"
+    rp num_a
+}
+
+rp "Max of two example finished."

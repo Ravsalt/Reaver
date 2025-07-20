@@ -1,0 +1,54 @@
+# Comprehensive variables.rv example
+
+# Declare and assign integer variables
+var1 = 10
+var2 = 20
+
+rp "Initial values:"
+rp var1
+rp var2
+
+# Perform operations and assign to new variables
+sum_vars = var1 + var2
+diff_vars = var2 - var1
+prod_vars = var1 * var2
+quot_vars = var2 / var1
+
+rp "Operation results:"
+rp sum_vars
+rp diff_vars
+rp prod_vars
+rp quot_vars
+
+# Reassign variables
+rp "Reassigned values:"
+var1 = 50
+var2 = 5
+rp var1
+rp var2
+
+# Use variables in conditional statements
+rp "Conditional checks:"
+if var1 < var2 {
+    rp "var1 is less than var2"
+} else {
+    rp "var1 is not less than var2"
+}
+
+if var1 < 100 {
+    rp "var1 is less than 100"
+} else {
+    rp "var1 is not less than 100"
+}
+
+# Use variables in a while loop
+rp "Looping with variables:"
+counter = 0
+limit = 3
+while counter < limit {
+    rp "Loop iteration: "
+    rp counter
+    counter = counter + 1
+}
+
+rp "Variables example finished."

@@ -1,0 +1,32 @@
+# Comprehensive parens.rv example
+
+# Basic parentheses usage
+rp "Basic Parentheses:"
+a = (2 + 3) * 4 # (5) * 4 = 20
+rp a
+
+b = 10 / (2 - 0) # 10 / (2) = 5
+rp b
+
+# Nested parentheses
+rp "Nested Parentheses:"
+c = ((2 + 3) * 2) + 1 # ((5) * 2) + 1 = (10) + 1 = 11
+rp c
+
+d = 20 - ( (5 * 2) / (1 + 1) ) # 20 - ( (10) / (2) ) = 20 - 5 = 15
+rp d
+
+# Parentheses with variables
+rp "Parentheses with Variables:"
+x = 5
+y = 2
+z = 3
+
+expr_var1 = (x + y) * z # (5+2) * 3 = 7 * 3 = 21
+rp expr_var1
+
+expr_var2 = x * (y + z) # 5 * (2+3) = 5 * 5 = 25
+rp expr_var2
+
+expr_var3 = (x + (y * z)) / y # (5 + (2*3)) / 2 = (5 + 6) / 2 = 11 / 2 = 5
+rp expr_var3

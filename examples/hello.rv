@@ -1,0 +1,18 @@
+# Comprehensive hello.rv example
+
+# Print a simple string
+rp "Hello, Reaver!"
+
+# Declare and print an integer variable
+my_greeting_number = 123
+rp my_greeting_number
+
+# Use a variable in a conditional
+if my_greeting_number < 200 {
+    rp "Greeting number is less than 200"
+} else {
+    rp "Greeting number is 200 or more"
+}
+
+# Print another string
+rp "This is the end of the hello example."

@@ -1,0 +1,143 @@
+# Logic Gates Example in Reaver
+
+# This program simulates basic logic gates using integer arithmetic and conditionals.
+# 0 represents FALSE, 1 represents TRUE.
+
+# --- NOT Gate ---
+rp "--- NOT Gate ---"
+
+input_not_a = 0
+output_not_a = 1 - input_not_a
+rp "NOT 0 is:"
+rp output_not_a # Expected: 1
+
+input_not_b = 1
+output_not_b = 1 - input_not_b
+rp "NOT 1 is:"
+rp output_not_b # Expected: 0
+
+# --- AND Gate ---
+rp "--- AND Gate ---"
+
+# Case 0 AND 0
+input_and_a = 0
+input_and_b = 0
+output_and_1 = input_and_a * input_and_b
+rp "0 AND 0 is:"
+rp output_and_1 # Expected: 0
+
+# Case 0 AND 1
+input_and_a = 0
+input_and_b = 1
+output_and_2 = input_and_a * input_and_b
+rp "0 AND 1 is:"
+rp output_and_2 # Expected: 0
+
+# Case 1 AND 0
+input_and_a = 1
+input_and_b = 0
+output_and_3 = input_and_a * input_and_b
+rp "1 AND 0 is:"
+rp output_and_3 # Expected: 0
+
+# Case 1 AND 1
+input_and_a = 1
+input_and_b = 1
+output_and_4 = input_and_a * input_and_b
+rp "1 AND 1 is:"
+rp output_and_4 # Expected: 1
+
+# --- OR Gate ---
+rp "--- OR Gate ---"
+
+# Case 0 OR 0
+input_or_a = 0
+input_or_b = 0
+sum_or_1 = input_or_a + input_or_b
+if sum_or_1 < 1 {
+    output_or_1 = 0
+} else {
+    output_or_1 = 1
+}
+rp "0 OR 0 is:"
+rp output_or_1 # Expected: 0
+
+# Case 0 OR 1
+input_or_a = 0
+input_or_b = 1
+sum_or_2 = input_or_a + input_or_b
+if sum_or_2 < 1 {
+    output_or_2 = 0
+} else {
+    output_or_2 = 1
+}
+rp "0 OR 1 is:"
+rp output_or_2 # Expected: 1
+
+# Case 1 OR 0
+input_or_a = 1
+input_or_b = 0
+sum_or_3 = input_or_a + input_or_b
+if sum_or_3 < 1 {
+    output_or_3 = 0
+} else {
+    output_or_3 = 1
+}
+rp "1 OR 0 is:"
+rp output_or_3 # Expected: 1
+
+# Case 1 OR 1
+input_or_a = 1
+input_or_b = 1
+sum_or_4 = input_or_a + input_or_b
+if sum_or_4 < 1 {
+    output_or_4 = 0
+} else {
+    output_or_4 = 1
+}
+rp "1 OR 1 is:"
+rp output_or_4 # Expected: 1
+
+# --- XOR Gate ---
+rp "--- XOR Gate ---"
+
+# XOR (A XOR B) is (A AND NOT B) OR (NOT A AND B)
+# Or, more simply for 0/1: (A + B) - (2 * A * B)
+
+# Case 0 XOR 0
+input_xor_a = 0
+input_xor_b = 0
+sum_xor_1 = input_xor_a + input_xor_b
+prod_xor_1 = input_xor_a * input_xor_b
+output_xor_1 = sum_xor_1 - (2 * prod_xor_1)
+rp "0 XOR 0 is:"
+rp output_xor_1 # Expected: 0
+
+# Case 0 XOR 1
+input_xor_a = 0
+input_xor_b = 1
+sum_xor_2 = input_xor_a + input_xor_b
+prod_xor_2 = input_xor_a * input_xor_b
+output_xor_2 = sum_xor_2 - (2 * prod_xor_2)
+rp "0 XOR 1 is:"
+rp output_xor_2 # Expected: 1
+
+# Case 1 XOR 0
+input_xor_a = 1
+input_xor_b = 0
+sum_xor_3 = input_xor_a + input_xor_b
+prod_xor_3 = input_xor_a * input_xor_b
+output_xor_3 = sum_xor_3 - (2 * prod_xor_3)
+rp "1 XOR 0 is:"
+rp output_xor_3 # Expected: 1
+
+# Case 1 XOR 1
+input_xor_a = 1
+input_xor_b = 1
+sum_xor_4 = input_xor_a + input_xor_b
+prod_xor_4 = input_xor_a * input_xor_b
+output_xor_4 = sum_xor_4 - (2 * prod_xor_4)
+rp "1 XOR 1 is:"
+rp output_xor_4 # Expected: 0
+
+rp "Logic gates example finished."

@@ -1,0 +1,51 @@
+# Simple Calculator Example in Reaver
+
+# This program simulates a very basic calculator.
+# It takes two numbers and performs an operation based on a 'choice' variable.
+
+# Define numbers
+num1 = 10
+num2 = 5
+
+# Define operation choices:
+# 1 for Addition
+# 2 for Subtraction
+# 3 for Multiplication
+# 4 for Division
+
+choice = 1 # Change this value to test different operations
+
+rp "Calculator Program"
+
+if choice < 2 { # choice == 1 (Addition)
+    result = num1 + num2
+    rp "Result of Addition:"
+    rp result
+} else {
+    if choice < 3 { # choice == 2 (Subtraction)
+        result = num1 - num2
+        rp "Result of Subtraction:"
+        rp result
+    } else {
+        if choice < 4 { # choice == 3 (Multiplication)
+            result = num1 * num2
+            rp "Result of Multiplication:"
+            rp result
+        } else {
+            if choice < 5 { # choice == 4 (Division)
+                # Check for division by zero (simple check)
+                if num2 < 1 { # if num2 is 0 or negative, treat as error for simplicity
+                    rp "Error: Division by zero or negative number!"
+                } else {
+                    result = num1 / num2
+                    rp "Result of Division:"
+                    rp result
+                }
+            } else {
+                rp "Invalid choice. Please choose 1, 2, 3, or 4."
+            }
+        }
+    }
+}
+
+rp "Calculator program finished."
