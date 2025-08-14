@@ -1,5 +1,17 @@
 # Reaver: A Simple, Educational Programming Language
 
+## Performance & Size Micro-benchmarks
+
+This table shows preliminary benchmarks for the Reaver compiler (`reaverc`) compared to `clang`.
+
+| Benchmark         | Reaver Compile Time (ms) | Reaver Binary Size (bytes) | Clang Compile Time (ms) | Clang Binary Size (bytes) |
+|-------------------|--------------------------|----------------------------|-------------------------|---------------------------|
+| **Hello World**   | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
+| **Simple Loop**   | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
+| **Arithmetic**    | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
+
+*Benchmarks are illustrative and will be updated as the compiler matures.*
+
 Reaver is a minimalist, Turing-complete programming language designed to make learning about compiler design accessible and engaging. It provides a hands-on experience with fundamental programming constructs and the process of translating high-level code into native executables.
 
 ## Key Features
