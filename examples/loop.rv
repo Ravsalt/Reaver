@@ -18,7 +18,7 @@ rp "Loops finished!"
 
 # Another loop with a different condition
 k = 10
-while k > 7 {
+while 7 < k {
     rp "Countdown: "
     rp k
     k = k - 1

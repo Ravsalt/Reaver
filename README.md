@@ -6,9 +6,9 @@ This table shows preliminary benchmarks for the Reaver compiler (`reaverc`) comp
 
 | Benchmark         | Reaver Compile Time (ms) | Reaver Binary Size (bytes) | Clang Compile Time (ms) | Clang Binary Size (bytes) |
 |-------------------|--------------------------|----------------------------|-------------------------|---------------------------|
-| **Hello World**   | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
-| **Simple Loop**   | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
-| **Arithmetic**    | *TBD*                    | *TBD*                      | *TBD*                   | *TBD*                     |
+| **Hello World**   | 354                      | 16024                      | 68                      | 15416                     |
+| **Simple Loop**   | 107                      | 16072                      | 84                      | 15464                     |
+| **Arithmetic**    | 182                      | 16048                      | 139                     | 15464                     |
 
 *Benchmarks are illustrative and will be updated as the compiler matures.*
 
