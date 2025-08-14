@@ -2,7 +2,7 @@
 
 ## Performance & Size Micro-benchmarks
 
-This table shows preliminary benchmarks for the Reaver compiler (`reaverc`) compared to `clang`.
+This table shows preliminary benchmarks for the Reaver compiler (`reaverc`) compared to `gcc`.
 
 | Benchmark         | Reaver Compile Time (ms) | Reaver Binary Size (bytes) | Clang Compile Time (ms) | Clang Binary Size (bytes) |
 |-------------------|--------------------------|----------------------------|-------------------------|---------------------------|
@@ -10,7 +10,7 @@ This table shows preliminary benchmarks for the Reaver compiler (`reaverc`) comp
 | **Simple Loop**   | 107                      | 16072                      | 84                      | 15464                     |
 | **Arithmetic**    | 182                      | 16048                      | 139                     | 15464                     |
 
-*Benchmarks are illustrative and will be updated as the compiler matures.*
+*Needs more optimization.*
 
 Reaver is a minimalist, Turing-complete programming language designed to make learning about compiler design accessible and engaging. It provides a hands-on experience with fundamental programming constructs and the process of translating high-level code into native executables.
 
@@ -54,6 +54,30 @@ Reaver serves as an excellent educational tool for:
 ## Documentation
 
 For a comprehensive guide on Reaver's language features, compiler usage, error handling, and development insights, please refer to the [full documentation](docs/README.md).
+
+## Contributing
+
+We welcome contributions to the Reaver project! Whether you're interested in reporting bugs, suggesting new features, improving documentation, or contributing code, your help is valuable.
+
+## Future Plans
+
+Reaver is an evolving project. Here are some areas we plan to explore and improve:
+
+*   **Language Features:**
+    *   Support for more data types (e.g., floating-point numbers, strings as first-class citizens).
+    *   Function parameters and return values.
+    *   Arrays and basic data structures.
+    *   More complex control flow (e.g., `for` loops, `switch` statements).
+*   **Compiler Optimizations:**
+    *   Implementing various optimization passes in the middle-end to improve the performance of generated code.
+    *   Register allocation improvements.
+    *   Dead code elimination.
+*   **Tooling:**
+    *   Improved error reporting and diagnostics.
+    *   A debugger for Reaver programs.
+*   **Platform Support:**
+    *   Expanding support beyond 64-bit Linux.
+
 
 ## Examples
 
